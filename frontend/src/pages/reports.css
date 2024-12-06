@@ -1,0 +1,20 @@
+.reports {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .reports h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .reports p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .reports .chart-container {
+    margin-top: 2rem;
+  }
+  

@@ -1,0 +1,20 @@
+.summary {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .summary h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .summary p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .summary .chart-container {
+    margin-top: 2rem;
+  }
+  
