@@ -40,3 +40,21 @@ Backend: Node.js, Express.js
 Database: MongoDB Atlas
 Hosting: NGINX, PM2, DigitalOcean
 Authentication: JSON Web Tokens (JWT)
+
+
+Challenges and Solutions
+1. Hosting Frontend and Backend on the Same Server
+Challenge: Configuring NGINX to serve both the React frontend and Node.js backend on a single DigitalOcean droplet.
+Solution: Updated the NGINX configuration to serve the React build folder on port 80 and proxy backend requests to port 3000.
+2. Cross-Origin Resource Sharing (CORS)
+Challenge: CORS errors occurred while the frontend attempted to communicate with the backend.
+Solution: Added a CORS policy to the backend allowing requests from the frontend's domain.
+3. Chart Rendering Issues
+Challenge: Charts were not rendering correctly due to mismatched data format and API URLs.
+Solution: Debugged and ensured Chart.js was correctly configured, updated API URLs to the hosted backend, and verified data format.
+4. MongoDB Database Configuration
+Challenge: Connecting the application to MongoDB Atlas and ensuring proper schema and collection setup.
+Solution: Verified MongoDB connection string, set up the users collection, and pre-inserted data for login credentials.
+5. JWT Authentication
+Challenge: Implementing secure authentication while maintaining simplicity for testing.
+Solution: Used hardcoded credentials for testing and implemented JWT for session management.
